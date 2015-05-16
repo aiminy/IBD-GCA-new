@@ -21,7 +21,8 @@ load("IBD_All_Snp.RData")
 #load("Snp_Index_After_filter.RData")
 
 load("Snp_Index_4_all_Snp.RData")
-load("~/Marker_effect_estimation/CombinedMarkerEffectEstimation.RData")
+#load("~/Marker_effect_estimation/CombinedMarkerEffectEstimation.RData")
+load("CombinedMarkerEffectEstimation.RData")
 load("Pop_19_snp_plant_heigth_3_25_2015.RData")
 
 
