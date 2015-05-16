@@ -18,7 +18,7 @@ The file to include the all SNP and plant height data:
 Pop_19_snp_plant_heigth_3_25_2015.RData
 
 
-After you have these 5 files in your current directory, then you can start R, and type source("IBDGCA.R"). 
+After you have these 5 files in your current directory, then you can start R, and type source("IBDGCA.R"): 
 You will find the results in "prediction.acc.each.pop"
 
 If you want to have these 5 files to have a try, please email me at ay247@cornell.edu 
