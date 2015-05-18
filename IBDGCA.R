@@ -1,17 +1,6 @@
-#Usage: 
+#Usage: start R, source("IBDGCA.R") 
 #
-#Re<-CallFindOtherPopulationIbdwithThisPopulation(populatio.parents.name.4,wema.ibd.data.2)
-#
-#This function needs two input files
-#The first file is population parents information:
-#
-# 1008   A  p1
-# 1008   B  p2
-
-#The second file is IBD segments file
-#
-#A  B 0 64  #A IBD with B from 0 to 64
- 
+#This program needs 5 input files. What each file included is described in readme file
 
 load("./data/Population_Parents_Data.RData")
 #load("New_IBD_data.RData")
