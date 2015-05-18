@@ -13,17 +13,17 @@
 #A  B 0 64  #A IBD with B from 0 to 64
  
 
-load("Population_Parents_Data.RData")
+load("./data/Population_Parents_Data.RData")
 #load("New_IBD_data.RData")
 #load("New_IBD_data_2.RData")
 
-load("IBD_All_Snp.RData")
+load("./data/IBD_All_Snp.RData")
 #load("Snp_Index_After_filter.RData")
 
-load("Snp_Index_4_all_Snp.RData")
+load("./data/Snp_Index_4_all_Snp.RData")
 #load("~/Marker_effect_estimation/CombinedMarkerEffectEstimation.RData")
-load("CombinedMarkerEffectEstimation.RData")
-load("Pop_19_snp_plant_heigth_3_25_2015.RData")
+load("./data/CombinedMarkerEffectEstimation.RData")
+load("./data/Pop_19_snp_plant_heigth_3_25_2015.RData")
 
 
 FindOtherPopulationIbdwithThisPopulation<-function(population.parents.name.4,wema.ibd.data.2,this.pop)
