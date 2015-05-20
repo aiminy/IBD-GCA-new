@@ -1,4 +1,4 @@
-A Generalized General Combining Ability model for genomic selection
+*A Generalized General Combining Ability model for genomic selection*
 
 Abstact:
 
