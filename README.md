@@ -6,9 +6,6 @@ In maize breeding, there are several previous studies that breeders pool the A/*
 
 **Method**
 
-
-
-\n
 To run GGCA model, 5 input files are needed:
 
 The file to define population and their parents:
@@ -30,6 +27,11 @@ Pop_19_snp_plant_heigth_3_25_2015.RData
 After you have these 5 files, make a directory named as data in your current directory, then you can start R, and type source("IBDGCA.R"): 
 You will find the results in "prediction.acc.each.pop"
 
-If you want to have these 5 files to have a try, please email me at ay247@cornell.edu 
+If you want to have these 5 files to have a try, please email me at ay247@cornell.edu
+
+**Results**
+
+
+
 
 
