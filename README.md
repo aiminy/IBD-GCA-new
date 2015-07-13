@@ -39,4 +39,3 @@ The above Figure shows three situations related to the effects of relaxing weigh
 * Prediction accuracies increase as the weight to NON-IBD segments increase:1017,1020,1023,1119,1121,1122 
 * Prediction accuracies decrease as the weights to NON-IBD segments increase: 1016,1019,1028,1114,1120
 
-
