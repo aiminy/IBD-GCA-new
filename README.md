@@ -36,7 +36,7 @@ In the IBD-GCA model, we used BEAGLE to identify the IBD segments between parent
 ![Image of Yaktocat](/Relax_NON_IBD_based_on_mapping_depth_2.png)
 The above Figure shows three situations related to the effects of relaxing weight assignments to NON-IBD segments on prediction accuracies for these 19 crosses: 
 * No effects:1008,1015,1018,1116 
-* Prediction accuracies increase as the weight to NON-IBD segments increase:1017,1020,1119,1121,1122 
+* Prediction accuracies increase as the weight to NON-IBD segments increase:1017,1020,1023,1119,1121,1122 
 * Prediction accuracies decrease as the weights to NON-IBD segments increase: 1016,1019,1028,1114,1120
 
 
