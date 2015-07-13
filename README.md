@@ -40,4 +40,4 @@ The above Figure shows three situations related to the effects of relaxing weigh
 * Prediction accuracies increase as the weight to NON-IBD segments increase:1017,1020,1023,1119,1121,1122
   * These 6 crosses shows the increased predition accuracies as the weight to NON-IBD segments increase. This means by borrowing some information in NON-IBD segemnsts that BEAGLE failed to indetify we obtain some predtion power.
 * Prediction accuracies decrease as the weights to NON-IBD segments increase: 1016,1019,1028,1114,1120
-  * We observed the decreased prediction accuracies as the weights to NON-IBD segments increase for these 5 crosses. This situation could be due that borrowing information from NON-IBD segments could bring some noise, and these noise  could decrease prediction power.   
+  * We observed the decreased prediction accuracies as the weights to NON-IBD segments increase for these 5 crosses. This situation could be due that borrowing information from NON-IBD segments could bring some noises, and these noises  could decrease prediction power.   
