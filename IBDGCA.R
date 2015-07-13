@@ -220,5 +220,8 @@ return(cbind(target.pop,cor(target.pop.ibd.gca.trait.prediction,Phenotype.Y)))
 
 }
 
+
+#Re.refined.mapping.new<-lapply(Re.refined,Map2OneIndex4OnePop)
+#Re.refined.mapping.new.estimation<-lapply(Re.refined.mapping.new,IBDGCAMarkerEffectEstimation4OnePop)
 prediction.acc.each.pop<-t(sapply(1:19,IBDGCAPrediction4OnePop))
 
