@@ -31,7 +31,7 @@ If you want to have these 5 files to have a try, please email me at ay247@cornel
 
 **Results**
 
-
+![Image of Yaktocat](/Relax_NON_IBD_based_on_mapping_depth_2.png)
 
 
 
