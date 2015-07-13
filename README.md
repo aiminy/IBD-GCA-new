@@ -38,6 +38,10 @@ The above Figure shows three different effects on prediction accuracies by relax
 *(1) No effects:1008,1015,1018 
 *(2) Prediction accuracies increase as the weight to NON-IBD segments increase:1020,1119,1121,1122 
 *(3) Prediction accuracies decrease as the weights to NON-IBD segments increase. 1114,1120
-
+1. Item 1
+2. Item 2
+3. Item 3
+   * Item 3a
+   * Item 3b
 
 
