@@ -31,7 +31,7 @@ If you want to have these 5 files to have a try, please email me at ay247@cornel
 
 **Results**
 
-In the IBD-GCA model, we used BEAGLE to identify the IBD segments between parents of target populations and that of trainning populations, and assigned weight 1 for IBD segments and weight 0 to NON-IBD segments. Considering the possibilities that some IBD segments could not be identified by BEAGLE, we explored to relax weight assignment for NON-IBD segments. To perform this weight relaxation, we fixed weight assignment for IBD segments as 1, and assigned a value for NON-IBD as a weight by sampling from uniform distribution[0,1] 10 times. The following Figure shows the effects of relaxing weight assignment to NON-IBD segments on prediction accuracires for different crosses.  
+In the IBD-GCA model, we used BEAGLE to identify the IBD segments between parents of target populations and that of trainning populations, and assigned weight 1 for IBD segments and weight 0 to NON-IBD segments. Considering the possibilities that some IBD segments could not be identified by BEAGLE, we relaxed weight assignment for NON-IBD segments to explore the effect of weight relaxation to NON-IBD segmenst on predction accuracies. To perform this weight relaxation, we fixed weight assignment for IBD segments to 1, and assigned a weight value for NON-IBD segments by sampling from uniform distribution[0,1] 10 times. The following Figure shows the effects of relaxing weight assignment to NON-IBD segments on prediction accuracires for different crosses.
 
 ![Image of Yaktocat](/Relax_NON_IBD_based_on_mapping_depth_2.png)
 
