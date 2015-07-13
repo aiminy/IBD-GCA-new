@@ -37,7 +37,7 @@ In the IBD-GCA model, we used BEAGLE to identify the IBD segments between parent
 The above Figure shows three situations related to the effects of relaxing weight assignments to NON-IBD segments on prediction accuracies for these 19 crosses: 
 * No effects:1008,1015,1018,1021,1115,1116,1117,1118. 
   * For these 8 crosses, increasing weights to NON-IBD segments does not have siginificant effects on prediction accuracuies, which indicates IBD segments we used have included the information for prediction.  
+* Prediction accuracies decrease as the weights to NON-IBD segments increase: 1016,1019,1028,1114,1120
+  * We observed the decreased prediction accuracies as the weights to NON-IBD segments increase for these 5 crosses. This situation could be due that borrowing information from NON-IBD segments could bring some noises, and these noises  could decrease prediction power.
 * Prediction accuracies increase as the weight to NON-IBD segments increase:1017,1020,1023,1119,1121,1122
   * These 6 crosses shows the increased predition accuracies as the weight to NON-IBD segments increase. This means by borrowing some information in NON-IBD segemnsts that BEAGLE failed to indetify we obtain some predtion power.
-* Prediction accuracies decrease as the weights to NON-IBD segments increase: 1016,1019,1028,1114,1120
-  * We observed the decreased prediction accuracies as the weights to NON-IBD segments increase for these 5 crosses. This situation could be due that borrowing information from NON-IBD segments could bring some noises, and these noises  could decrease prediction power.   
