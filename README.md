@@ -40,6 +40,6 @@ The above Figure shows three situations related to the effects of relaxing weigh
 * Prediction accuracies decrease as the weights to NON-IBD segments increase: 1016,1019,1028,1114,1120
   * We observed the decreased prediction accuracies as the weights to NON-IBD segments increase for these 5 crosses. This situation could be due that borrowing information from NON-IBD segments could bring some noises, and these noises  could decrease prediction power.
 * Prediction accuracies increase as the weight to NON-IBD segments increase:1017,1020,1023,1119,1121,1122
-  * These 6 crosses shows the increased predition accuracies as the weight to NON-IBD segments increase. This means by borrowing some information in NON-IBD segemnsts that BEAGLE failed to identify we retain some predtion power.
+  * These 6 crosses shows the increased prediction accuracies as the weight to NON-IBD segments increase. This means by borrowing some information in NON-IBD segemnsts that BEAGLE failed to identify we retain some prediction power.
 
 These results demonstrates that IBD-GCA model can be seen as a filter that includes the related information between parents of tartget population and that of training population and excludes the unrelated information between them. The suitable balancing between information inclusion and information exclusion can help to obtain prediction power for the genomic selection of target population.
