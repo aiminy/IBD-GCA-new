@@ -42,6 +42,8 @@ The above Figure shows three situations related to the effects of relaxing weigh
 * Prediction accuracies increase as the weight to NON-IBD segments increase:1017,1020,1023,1119,1121,1122
   * These 6 crosses shows the increased prediction accuracies as the weight to NON-IBD segments increase. This means by borrowing some information in NON-IBD segemnsts that BEAGLE failed to identify we retain some prediction power.
 
+So far, we assigned weights based on whether the segment is in IBD or not only. We observed most of test cross share at leat one parent with other training crosses, so we combined the pedigree and IBD relationship together,and came up with a combined weight assignemnt shema as the following:
+
 ![Image of Yaktocat](/Ped_Plus_IBD.png)
 
 ![Image of Yaktocat](/Results_Ped_Plus_IBD.png)
