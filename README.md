@@ -50,6 +50,6 @@ In this combined weight assignment shema, we assigned more weight to the SNPs fo
 
 ![Image of Yaktocat](/Results_Ped_Plus_IBD.png)
 
-The above Figure shows we got the similar results as we performed weight relaxtion based don IBD relationship only.
+The above Figure shows we got the similar results as we performed weight relaxtion based on IBD relationship only.
 
 These results demonstrates that IBD-GCA model can be seen as a filter that includes the related information between parents of tartget population and that of training population and excludes the unrelated information between them. The suitable balancing between information inclusion and information exclusion can help to obtain prediction power for the genomic selection of target population.
