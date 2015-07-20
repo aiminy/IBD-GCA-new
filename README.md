@@ -44,6 +44,6 @@ The above Figure shows three situations related to the effects of relaxing weigh
 
 ![Image of Yaktocat](/Ped_Plus_IBD.png)
 
-![Image of Yaktocat](/)Results_Ped_Plus_IBD.png
+![Image of Yaktocat](/Results_Ped_Plus_IBD.png)
 
 These results demonstrates that IBD-GCA model can be seen as a filter that includes the related information between parents of tartget population and that of training population and excludes the unrelated information between them. The suitable balancing between information inclusion and information exclusion can help to obtain prediction power for the genomic selection of target population.
