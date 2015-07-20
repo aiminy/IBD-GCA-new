@@ -46,7 +46,7 @@ So far, we assigned weights based on whether the segment is in IBD or not only. 
 
 ![Image of Yaktocat](/Ped_Plus_IBD.png)
 
-In this combined weight assignemnt shema, we assigned more weight to the SNPs for the test crosses that have at least one parent shared with the training cross. For example, in above Figure we gave weight 2 for the SNP effect that  are estimated from 1015,1016,1017,1018 crosses since these 4 crosses share with one parent with test cross 1008, and they are also in IBD. For 1019, we gave weight 1 the SNP effect that are estimated from 1019 cross since 1019 does not share partent with 1008, but the SNP are in the IBD segments.
+In this combined weight assignment shema, we assigned more weight to the SNPs for the test crosses that have at least one parent shared with the training cross. For example, in above Figure we gave weight 2 to the SNP effect that  are estimated from 1015,1016,1017,1018 crosses since these 4 crosses share with one parent with test cross 1008, and they are also in IBD. For 1019, we gave weight 1 to the SNP effect that are estimated from 1019 cross since 1019 does not share partent with 1008, but these SNPs are in the IBD segments between parents of 1019 and 1008.
 
 ![Image of Yaktocat](/Results_Ped_Plus_IBD.png)
 
