@@ -42,7 +42,7 @@ The above Figure shows three situations related to the effects of relaxing weigh
 * Prediction accuracies increase as the weight to NON-IBD segments increase:1017,1020,1023,1119,1121,1122
   * These 6 crosses shows the increased prediction accuracies as the weight to NON-IBD segments increase. This means by borrowing some information in NON-IBD segemnsts that BEAGLE failed to identify we retain some prediction power.
 
-So far, we assigned weights based on whether the segment is in IBD or not only. We observed most of test crosses share at leat one parent with other training crosses, so we combined the pedigree and IBD relationship together,and came up with a combined weight assignment shema as the following:
+So far, we assigned weights based on whether the segment is in IBD or not only. We observed most of test crosses share at least one parent with other training crosses, so we combined the pedigree and IBD relationship together,and came up with a combined weight assignment shema as the following:
 
 ![Image of Yaktocat](/Ped_Plus_IBD.png)
 
@@ -52,4 +52,4 @@ In this combined weight assignment shema, we assigned more weight to the SNPs fo
 
 The above Figure shows we got the similar results as we performed weight relaxtion based on IBD relationship only.
 
-These results demonstrates that IBD-GCA model can be seen as a filter that includes the related information between parents of tartget population and that of training population and excludes the unrelated noise between them. The suitable balancing between information inclusion and noise exclusion can help to obtain prediction power for the genomic selection of target population.
+These results demonstrate that IBD-GCA model can be seen as a filter that includes the related information between parents of tartget population and that of training population and excludes the unrelated noise between them. The suitable balancing between information inclusion and noise exclusion can help to obtain prediction power for the genomic selection of target population.
