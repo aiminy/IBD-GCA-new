@@ -42,4 +42,14 @@ The above Figure shows three situations related to the effects of relaxing weigh
 * Prediction accuracies increase as the weight to NON-IBD segments increase:1017,1020,1023,1119,1121,1122
   * These 6 crosses shows the increased prediction accuracies as the weight to NON-IBD segments increase. This means by borrowing some information in NON-IBD segemnsts that BEAGLE failed to identify we retain some prediction power.
 
-These results demonstrates that IBD-GCA model can be seen as a filter that includes the related information between parents of tartget population and that of training population and excludes the unrelated information between them. The suitable balancing between information inclusion and information exclusion can help to obtain prediction power for the genomic selection of target population.
+So far, we assigned weights based on whether the segment is in IBD or not only. We observed most of test crosses share at leat one parent with other training crosses, so we combined the pedigree and IBD relationship together,and came up with a combined weight assignment shema as the following:
+
+![Image of Yaktocat](/Ped_Plus_IBD.png)
+
+In this combined weight assignment shema, we assigned more weight to the SNPs for the test crosses that have at least one parent shared with the training cross. For example, in above Figure we gave weight 2 to the SNPs that their effects are estimated from 1015,1016,1017,1018 crosses since these 4 crosses share one parent with test cross 1008, and they are also in IBD. For 1019, we gave weight 1 to the SNPs that their effect are estimated from 1019 cross since 1019 does not share partent with 1008, but these SNPs are in the IBD segments between parents of 1019 and 1008. Likewisely, we  performed weight relaxation for NON-IBD segments by sampling from uniform distribution[0,1] 10 times for this combined weight assignment schema. The following Figure shows the effects of relaxing weight assignment to NON-IBD segments on prediction accuracires for different crosses when using this combined weight assignment schema.
+
+![Image of Yaktocat](/Results_Ped_Plus_IBD.png)
+
+The above Figure shows we got the similar results as we performed weight relaxtion based on IBD relationship only.
+
+These results demonstrates that IBD-GCA model can be seen as a filter that includes the related information between parents of tartget population and that of training population and excludes the unrelated noise between them. The suitable balancing between information inclusion and noise exclusion can help to obtain prediction power for the genomic selection of target population.
