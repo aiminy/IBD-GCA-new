@@ -63,6 +63,26 @@ Phenotype.Y.2[NA.index]<-imputation.value
 return(Phenotype.Y.2)
 }
 
+ConvertMappingData2Matrix<-function(Mapping_Data,Estimation_Data,w_ibd,w_no_ibd){
+LL.matrix<-GenerateLabelMatrix(dim(Mapping_Data)[1],colnames(Estimation_Data))
+LL.matrix.data.label<-cbind(Mapping_Data,LL.matrix)
+LL.matrix.data.label.2<-apply(LL.matrix.data.label,1,ReplaceWithLabel4OneRow,w_ibd,w_no_ibd)
+LL.matrix.data.label.3 <- do.call(rbind,LL.matrix.data.label.2)
+LL.matrix.data.label.4<-matrix(as.numeric(LL.matrix.data.label.3[,5:23]),length(as.numeric(LL.matrix.data.label.3[,5:23]))/19,19)
+colnames(LL.matrix.data.label.4)=colnames(LL.matrix.data.label.3)[5:23]
+#print(head(LL.matrix.data.label.4))
+
+#effect.estimation.combine.label<-combined.marker.estimation*LL.matrix.data.label.4
+LL.matrix.data.label.5<-LL.matrix.data.label.4[,-which(colnames(LL.matrix.data.label.4) %in% c(unique(Mapping_Data[,3])[[1]]))]
+
+#print(head(LL.matrix.data.label.5))
+
+#LL.matrix.pedigree.ibd<-LL.matrix.based.on.pedigree+LL.matrix.data.label.5
+
+return(LL.matrix.data.label.5)
+
+}
+
 
 WeightIBDGCA2<-function(Mapping_Data,Estimation_Data,Pop_Snp_Data,w_ibd,w_no_ibd){
 LL.matrix<-GenerateLabelMatrix(dim(Mapping_Data)[1],colnames(Estimation_Data))
@@ -188,6 +208,50 @@ LL.matrix<-GenerateLabelMatrix(dim(Mapping_Data)[1],colnames(Estimation_Data))
 #print(head(LL.matrix))
 
 s5<-s4[-which(s4 %in% c(unique(Mapping_Data[,3][[1]])))]
+
+LL.matrix[,which(colnames(LL.matrix) %in% c(s5))]<-1
+
+LL.matrix.2<-LL.matrix[,-which(colnames(LL.matrix) %in% c(unique(Mapping_Data[,3][[1]])))]
+
+#print(head(LL.matrix.2))
+
+#print(tail(LL.matrix.2))
+
+#cat("target pop:",c(unique(Mapping_Data[,3][[1]])),"\n")
+
+#cat(s5,"\n")
+
+return(LL.matrix.2)
+
+}
+
+GenerateLabelMatrixBasedOnPedigreeOneParent<-function(Mapping_Data,population_parents_name,Estimation_Data,t_p,m_p){
+
+population_parents_name_t<-population_parents_name[which(population_parents_name[,1] %in% unique(Mapping_Data[,3][[1]])),]
+s1<-as.character(population_parents_name_t[which(population_parents_name_t[,3] %in% c(t_p)),2])
+
+population_parents_name_m<-population_parents_name[-which(population_parents_name[,1] %in% unique(Mapping_Data[,3][[1]])),]
+s2<-as.character(population_parents_name_m[which(population_parents_name_m[,3] %in% c(m_p)),2])
+
+#population_parents_name[,3] %in% c(t_p)),2])
+
+#s1<-as.character(population_parents_name[which(population_parents_name[,1] %in% unique(Mapping_Data[,3][[1]])&population_parents_name[,3] %in% c(t_p)),2])
+
+#s2<-as.character(population_parents_name[which(population_parents_name[,1] %in% c(colnames(Estimation_Data))&population_parents_name[,3] %in% c(t_p)),2])
+
+s3<-intersect(s1,s2)
+
+matached.pop.name<-unique(as.character(population_parents_name_m[which(population_parents_name_m[,2] %in% c(s3)&population_parents_name_m[,3] %in% c(m_p)),1]))
+
+#s4<-colnames(Estimation_Data)[which(colnames(Estimation_Data) %in% c(matached.pop.name))]
+
+LL.matrix<-GenerateLabelMatrix(dim(Mapping_Data)[1],colnames(Estimation_Data))
+
+#LL.matrix[,which(colnames(LL.matrix) %in% c(s4))]<-1
+
+#print(head(LL.matrix))
+
+s5<-matached.pop.name
 
 LL.matrix[,which(colnames(LL.matrix) %in% c(s5))]<-1
 
