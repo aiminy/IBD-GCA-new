@@ -16,9 +16,14 @@ load("./data/Snp_Index_4_all_Snp.RData")
 #this matrix is population name
 load("./data/CombinedMarkerEffectEstimation.RData")
 
-#
+#Load phenotype and SNP data from 19 populations. The 1st column is population name. The 2nd column is accession name.
+#The 3rd column is phenotype data. SNP data starts from 4th column. there are 955690 SNP markers.
+#The dimension of this data matrix:3402*955693
+#pop.name acc height  1 2 3
+#1008 WEMA_6x1008_MARS-WEMA_269939_tester_CML395_CML444 244.25  -9  -9  -9
+#1008 WEMA_6x1008_MARS-WEMA_269940_tester_CML395_CML444 235.75  -9  -9  -9
+#1008 WEMA_6x1008_MARS-WEMA_269941_tester_CML395_CML444 224.50  -9  -9  -9
 load("./data/Pop_19_snp_plant_heigth_3_25_2015.RData")
-
 
 FindOtherPopulationIbdwithThisPopulation<-function(population.parents.name.4,wema.ibd.data.2,this.pop,t_p,m_p)
 {
