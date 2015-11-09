@@ -2,11 +2,21 @@
 #
 #This program needs 5 input files. What each file included is described in readme file
 
+
 source("./WeightedIBDGCA_function.R")
+
 load("./data/Population_Parents_Data.RData")
+
 load("./data/IBD_All_Snp.RData")
+
 load("./data/Snp_Index_4_all_Snp.RData")
+
+#There are 19 cross populations from WEMA. we use each population as a training set to estimate marker effects,
+#combine all estimation together to form a 955690*19 matrix. Row name of this matrix is SNP index, column name of
+#this matrix is population name
 load("./data/CombinedMarkerEffectEstimation.RData")
+
+#
 load("./data/Pop_19_snp_plant_heigth_3_25_2015.RData")
 
 
