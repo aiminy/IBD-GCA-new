@@ -17,7 +17,8 @@ load("./data/Snp_Index_4_all_Snp.RData")
 load("./data/CombinedMarkerEffectEstimation.RData")
 
 #Load phenotype and SNP data from 19 populations. The 1st column is population name. The 2nd column is accession name.
-#The 3rd column is phenotype data. SNP data starts from 4th column. there are 955690 SNP markers.
+#The 3rd column is phenotype data. SNP data starts from 4th column. there are 3402 lines, and each line has 
+#955690 SNP markers.
 #The dimension of this data matrix:3402*955693
 #pop.name acc height  1 2 3
 #1008 WEMA_6x1008_MARS-WEMA_269939_tester_CML395_CML444 244.25  -9  -9  -9
