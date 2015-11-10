@@ -2,9 +2,17 @@
 #
 #This program needs 5 input files. What each file included is described in readme file
 
-
+#Load all functions needed for calculation
 source("./WeightedIBDGCA_function.R")
 
+#load population,their parents information
+#pop.name parents.name  parents.type
+#1008 BREAD_2754  p1
+#1008 CML505  p1
+#1008 IMAS-87 p1
+#1008 KE_Maize19  p1
+#1008 BREAD_2765  p2
+#1008 IMAS-23 p2
 load("./data/Population_Parents_Data.RData")
 
 load("./data/IBD_All_Snp.RData")
